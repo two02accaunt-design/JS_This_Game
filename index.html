@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Змійка</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; background: #151515;
+  color: white; font-family: Arial, sans-serif;
+}
+h1 { color: #8be28b; margin-bottom: 8px; }
+canvas { background: #222; border: 3px solid #8be28b; max-width: 90vw; }
+button {
+  padding: 12px 25px; margin: 14px; background: #65bd65;
+  border: 0; border-radius: 6px; cursor: pointer; font-size: 16px;
+}
+#message { color: #ddd; }
+</style>
+</head>
+<body>
+<h1>🐍 Змійка</h1>
+<h2>Рахунок: <span id="score">0</span></h2>
+<canvas id="game" width="400" height="400"></canvas>
+<button onclick="restartGame()">Почати заново</button>
+<p>Керування: WASD або стрілки</p>
+<p id="message">Збирай яблука та уникай перешкод!</p>
+<script src="script.js"></script>
+</body>
+</html>
